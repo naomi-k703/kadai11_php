@@ -1,0 +1,104 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb; /* 背景を淡いグレーに */
+    margin: 0;
+    padding: 20px;
+    color: #333; /* テキストカラーを濃いグレーに */
+}
+
+/* フォームのコンテナ */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* 背景は白 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
+/* セクションのタイトル */
+h2 {
+    font-size: 22px; /* タイトルを少し大きく */
+    margin-bottom: 10px;
+    color: #333; /* タイトルカラーは濃いグレー */
+}
+
+/* 下線 */
+.underline {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc; /* 下線の色を淡いグレーに */
+    margin-bottom: 20px;
+}
+
+/* フォームの行 */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* フォームグループ（ラベルと入力フィールド） */
+.form-group {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* ラベル */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* ラベルの色をグレーに */
+}
+
+/* テキスト入力フィールド、セレクトボックス、テキストエリア */
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* ボーダーを淡いグレーに */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* 背景色を淡いグレーに */
+    margin-bottom: 10px;
+}
+
+/* チェックボックス */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submitボタン */
+input[type="submit"] {
+    background-color: #7d7d7d; /* グレーのボタン */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Submitボタンのホバー時 */
+input[type="submit"]:hover {
+    background-color: #555; /* ボタンの色を濃く */
+}
+
+/* テキストエリア */
+textarea {
+    height: 100px;
+}
+
+/* レスポンシブ対応（小さい画面用） */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+    .form-group {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
