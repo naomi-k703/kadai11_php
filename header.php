@@ -15,12 +15,16 @@ $kanri_flg = $_SESSION["kanri_flg"];
 
                 <!-- ログインユーザーに応じたリンクの表示 -->
                 <?php if ($kanri_flg == 1): ?>
-                    <a class="navbar-brand" href="select_member.php">管理者ページ</a>
+                    <a class="navbar-brand" href="user.php">USERデータ登録</a>
+                    <a class="navbar-brand" href="select_manage.php">管理者用ページ</a>
+                    <a class="navbar-brand" href="select_member.php">特定ページ</a>
                 <?php else: ?>
                     <a class="navbar-brand" href="select_member.php">ユーザーページ</a>
+                    <a class="navbar-brand" href="strength_analysis.php">自己分析の管理ページ</a>
                 <?php endif; ?>
 
                 <!-- 共通リンク -->
+                <a class="navbar-brand" href="user.php">USERデータ登録</a>
                 <a class="navbar-brand" href="logout.php">ログアウト</a>
             </div>
         </div>

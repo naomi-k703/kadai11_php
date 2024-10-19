@@ -49,6 +49,7 @@ $json = json_encode($values,JSON_UNESCAPED_UNICODE);
     <div class="container-fluid">
       <div class="navbar-header">
       <a class="navbar-brand" href="index.php">データ登録</a>
+      <a class="navbar-brand" href="strength_analysis.php">自己分析の管理ページ</a>
       </div>
     </div>
   </nav>
