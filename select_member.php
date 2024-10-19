@@ -5,9 +5,8 @@ include("header.php"); // 共通ヘッダーを読み込み
 $pdo = db_conn();
 $user_id = $_SESSION["user_id"];
 
-// SQLクエリで本人のデータを取得
-$sql = "SELECT id, username, employee_number, position, gender, email, naiyou, options 
-        FROM gs_an_table_TEST WHERE user_id = :user_id";
+// SQLクエリで本人のデータを取得 //id, username, employee_number, position, gender, email, naiyou, options 
+$sql = "SELECT *  FROM gs_an_table_TEST WHERE user_id = :user_id";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':user_id', $user_id, PDO::PARAM_INT);
 $status = $stmt->execute();
@@ -18,6 +17,7 @@ if ($status == false) {
 
 $values = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $json = json_encode($values, JSON_UNESCAPED_UNICODE);
+//var_dump($json);
 ?>
 
 <!DOCTYPE html>

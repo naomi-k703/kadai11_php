@@ -15,7 +15,7 @@ $kanri_flg = $_SESSION["kanri_flg"];
 
                 <!-- ログインユーザーに応じたリンクの表示 -->
                 <?php if ($kanri_flg == 1): ?>
-                    <a class="navbar-brand" href="select_manage.php">管理者ページ</a>
+                    <a class="navbar-brand" href="select_member.php">管理者ページ</a>
                 <?php else: ?>
                     <a class="navbar-brand" href="select_member.php">ユーザーページ</a>
                 <?php endif; ?>
